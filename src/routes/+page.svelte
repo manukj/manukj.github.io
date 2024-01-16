@@ -5,7 +5,7 @@
 <svelte:head>
 	<title>Manu - Main page</title>
 </svelte:head>
-<div class="h-screen w-full place-content-center flex place-items-center">
+<div class="h-full w-full place-content-center flex place-items-center">
 	<div class="flex flex-col text-center w-1/2 h-full justify-center justify-items-center">
 		<div class="text-white font-bold text-4xl text-center">
 			Hi!✋ <br />
@@ -22,7 +22,7 @@
 <style>
 	.typewriter {
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
-		border-right: 0.15em solid orange; /* The typwriter cursor */
+	
 		white-space: nowrap; /* Keeps the content on a single line */
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 		letter-spacing: 0.15em; /* Adjust as needed */

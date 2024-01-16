@@ -1,8 +1,22 @@
-<script>
-    import "../app.css";
-  </script>
-  
-<slot />
+<script lang="ts">
+	import { goto } from '$app/navigation';
+	import NavBar from '$lib/components/NavBar.svelte';
+	import { pageStore } from '$lib/stores/store';
+	import '../app.css';
+
+	function moveToPage(page: string) {
+		pageStore.set(page);
+		// redirect the page to root/page
+		goto(`/${page.toLowerCase()}`);
+	}
+</script>
+
+<div class="flex flex-col h-screen">
+	<NavBar segment={$pageStore} />
+	<div class="flex flex-1">
+		<slot />
+	</div>
+</div>
 
 <style>
 	@font-face {
