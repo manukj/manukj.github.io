@@ -13,8 +13,8 @@ const routes = [
 		label: 'Projects'
 	},
 	{
-		href: '/blog',
-		label: 'Blog'
+		href: '/contact',
+		label: 'Contact'
 	}
 ];
 
