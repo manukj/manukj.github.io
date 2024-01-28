@@ -1,9 +1,15 @@
 <script lang="ts">
-	// import Logo from '$lib/assets/logo.svg';
+	import { goto } from '$app/navigation';
+	import { pageStore } from '$lib/stores/store';
+// import Logo from '$lib/assets/logo.svg';
 	import Burger from './Hamburger.svelte';
 	import routes from './NavRoutes';
 	let opened = false;
 	export let segment: string;
+	function moveToPage(page: string) {
+		pageStore.set(page);
+		goto(`/${page.toLowerCase()}`);
+	}
 </script>
 
 <div class={opened ? 'NavBar open' : 'NavBar'}>
@@ -16,19 +22,22 @@
 		</div>
 		<div class="buttons">
 			{#each routes as route}
-				<a class={`button ${segment === route.href ? 'selected' : ''}`} href={route.href}
-					>{route.label}</a
+				<button
+					class={`button ${segment === route.label ? 'selected' : ''}`}
+					on:click={() => moveToPage(route.label)}
+					type="button"
 				>
+					{route.label}
+				</button>
 			{/each}
 		</div>
 	</div>
 	<div class="responsiveButtons buttons">
 		{#each routes as route}
-			<a class={`button ${segment === route.href ? 'selected' : ''}`} href={route.href}
+			<a class={`button ${segment === route.label ? 'selected' : ''}`} href={route.href}
 				>{route.label}</a
 			>
 		{/each}
-		
 	</div>
 </div>
 
