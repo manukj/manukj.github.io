@@ -7,7 +7,7 @@
 	}
 </script>
 
-<div class="card w-96 border border-dashed">
+<div class="card w-96  border border-dashed">
 	<div class="card-body">
 		<h2 class="card-title">{project.name}</h2>
 		<div class=" flex flex-row overflow-x-auto">

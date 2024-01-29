@@ -3,8 +3,8 @@
 	import ProjectItem from './components/ProjectItem.svelte';
 </script>
 
-<div class=" w-screen flex justify-center justify-self-center">
-	<div class="grid grid-flow-row grid-cols-2 gap-16 h-10">
+<div class="w-screen flex justify-center justify-self-center place-content-center">
+	<div class="grid grid-flow-row lg:grid-cols-3 sm:grid-cols-1 gap-6 h-10">
 		{#each projectData as project}
 			<ProjectItem {project} />
 		{/each}
