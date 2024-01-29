@@ -5,7 +5,7 @@
 	import Burger from './Hamburger.svelte';
 	import routes from './NavRoutes';
 	let opened = false;
-	export let segment: string;
+
 	function moveToPage(page: string) {
 		pageStore.set(page);
 		goto(`/${page.toLowerCase()}`);
@@ -23,7 +23,7 @@
 		<div class="buttons">
 			{#each routes as route}
 				<button
-					class={`button ${segment === route.label ? 'selected' : ''}`}
+					class={`button ${$pageStore === route.label ? 'selected' : ''}`}
 					on:click={() => moveToPage(route.label)}
 					type="button"
 				>
@@ -34,9 +34,13 @@
 	</div>
 	<div class="responsiveButtons buttons">
 		{#each routes as route}
-			<a class={`button ${segment === route.label ? 'selected' : ''}`} href={route.href}
-				>{route.label}</a
+			<button
+				type="button"
+				class={`button ${$pageStore === route.label ? 'selected' : ''}`}
+				on:click={() => moveToPage(route.label)}
 			>
+				{route.label}
+			</button>
 		{/each}
 	</div>
 </div>

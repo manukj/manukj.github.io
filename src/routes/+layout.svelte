@@ -1,11 +1,10 @@
 <script lang="ts">
 	import NavBar from '$lib/components/NavBar.svelte';
-	import { pageStore } from '$lib/stores/store';
 	import '../app.css';
 </script>
 
 <div class="flex flex-col h-screen">
-	<NavBar segment={$pageStore} />
+	<NavBar />
 	<div class="flex flex-1">
 		<slot />
 	</div>
