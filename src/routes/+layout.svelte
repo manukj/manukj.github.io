@@ -4,8 +4,10 @@
 </script>
 
 <div class="flex flex-col h-screen">
-	<NavBar />
-	<div class="flex flex-1">
+	<div style="top: 0; z-index: 1;" class="sticky shadow-sm">
+		<NavBar />
+	</div>
+	<div class="flex flex-1 overflow-auto">
 		<slot />
 	</div>
 </div>
