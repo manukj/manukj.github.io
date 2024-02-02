@@ -96,41 +96,60 @@ var agroChain: ProjectItemModel = {
 
 // University Projects
 var realEstateTodo: ProjectItemModel = {
-	name: 'RealEstate Todo App',
-	description: 'A simple todo app built using Kotlin and Android Studio.',
-	url: 'https://lush-ketchup-013.notion.site/RealEstate-Todo-App-1aa6d97d740f41c2828d504e12a64e34?pvs=4',
+	name: 'Real Estate Task Managment',
+	description:
+		'The Kotlin-based mobile application caters to Real Estate agents, streamlining property management tasks across diverse locations. Key functionalities include personalized task sets for each property, date/time reminders, location-based notifications, image uploads, task sorting, task updates, and task prioritization. The app aims to enhance efficiency and organization in property-related activities.',
+	url: 'https://github.com/manukj/university_COM6510_app_development',
 	techStack: [
 		{
 			name: 'Android',
 			icon: 'src/lib/assets/tech_stack_icon/android.svg'
 		},
 		{
-			name: 'Firebase',
-			icon: 'src/lib/assets/tech_stack_icon/firebase.svg'
+			name: 'RoomDB',
+			icon: 'src/lib/assets/tech_stack_icon/db.svg'
+		},
+		{
+			name: 'Kotlin',
+			icon: 'src/lib/assets/tech_stack_icon/kotlin.svg'
 		}
 	]
 };
 
 var three_d_Project: ProjectItemModel = {
-	name: '3D Project',
-	description: 'A 3D project built using Unity.',
-	url: 'https://lush-ketchup-013.notion.site/3D-Project-0b8f7b1d3a3c4b9d9d6f2b9d8d7c3f6f?pvs=4',
+	name: 'Aliens 3D Scene',
+	description:
+		'A 3D project built using Java and JOGEL part of COM6503 3D Computer Graphics @ University of Sheffield',
+	url: 'https://github.com/manukj/university_3d_lab/tree/master',
 	techStack: [
 		{
-			name: 'Unity',
-			icon: 'src/lib/assets/tech_stack_icon/unity.svg'
+			name: 'Java',
+			icon: 'src/lib/assets/tech_stack_icon/java.svg'
+		},
+		{
+			name: 'Blender',
+			icon: 'src/lib/assets/tech_stack_icon/blender.svg'
+		},
+		{
+			name: 'Swing',
+			icon: 'src/lib/assets/tech_stack_icon/swing.svg'
 		}
 	]
 };
 
 var llm: ProjectItemModel = {
-	name: 'LLM',
-	description: 'A 3D project built using Unity.',
-	url: 'https://lush-ketchup-013.notion.site/3D-Project-0b8f7b1d3a3c4b9d9d6f2b9d8d7c3f6f?pvs=4',
+	name: 'Large Language Model',
+	description:
+		'The project entails constructing a custom hash table structure for developing a statistical language model. It involves implementing hash functions to map word sequences, managing collision clusters with linked lists, and exploring model properties via a graphical user interface. The focus is on simplicity, diverging from large neural network models.',
+	url: 'https://github.com/manukj/university_COM6516_object_oriented',
 	techStack: [
 		{
-			name: 'Unity',
-			icon: 'src/lib/assets/tech_stack_icon/unity.svg'
+			name: 'Java',
+			icon: 'src/lib/assets/tech_stack_icon/java.svg'
+		},
+		{
+			name: 'Swing',
+			icon: 'src/lib/assets/tech_stack_icon/swing.svg'
 		}
 	]
 };
