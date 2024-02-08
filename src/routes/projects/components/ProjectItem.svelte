@@ -7,10 +7,17 @@
 	}
 </script>
 
-<div class="card w-96  border border-dashed">
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div
+	class="w-96  rounded shadow-slate-600 shadow-lg border-[0.5px]"
+	on:click={() => {
+		moveToUrl(project?.url ?? '');
+	}}
+>
 	<div class="card-body">
 		<h2 class="card-title">{project.name}</h2>
-		<div class=" flex flex-row overflow-x-auto">
+		<div class="flex flex-row overflow-x-auto">
 			{#each project.techStack as techStack}
 				<img src={techStack.icon} alt="techStack" class="w-5 h-5 mr-1" />
 			{/each}
@@ -23,7 +30,7 @@
 				class="card-title"
 				on:click={() => {
 					moveToUrl(project?.url ?? '');
-				}}>Read more</button
+				}}>More</button
 			>
 		</div>
 	{/if}
