@@ -19,7 +19,7 @@
 >
 	<Card>
 		<div class="card-body">
-			<h2 class="card-title">{project.name}</h2>
+			<h2 class="text-lg text-white">{project.name}</h2>
 			<div class="flex flex-row overflow-x-auto">
 				{#each project.techStack as techStack}
 					<img src={techStack.icon} alt="techStack" class="w-5 h-5 mr-1" />
