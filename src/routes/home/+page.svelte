@@ -26,6 +26,15 @@
 		<div class="text-white font-thin pt-5 {$firstTime ? 'fade-in' : ''}">
 			{mainPageSubHeader}
 		</div>
+		<div class="w-full place-content-center flex pt-10">
+			<iframe
+				src="https://github-readme-activity-graph.vercel.app/graph?username=manukj&hide_title=true&color=FFFFFF&line=FFF&bg_color=000000&area_color=FF0000"
+				width="570"
+				height="200"
+				title="GitHub Readme Activity Graph"
+				style="background: #000000;"
+			/>
+		</div>
 	</div>
 </div>
 
