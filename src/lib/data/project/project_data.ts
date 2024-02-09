@@ -21,13 +21,18 @@ var boringHtml: ProjectItemModel = {
 		{
 			name: 'Flask',
 			icon: 'src/lib/assets/tech_stack_icon/flask.svg'
+		},
+		{
+			name: 'Telegram',
+			icon: 'src/lib/assets/tech_stack_icon/telegram.svg'
 		}
 	]
 };
 
 var moneyBin: ProjectItemModel = {
 	name: 'Money Bin',
-	description: 'An app to manage your money, track your expenses, and plan your budget.',
+	description:
+		'Waste Management System: combining IoT with AI, it detects disposed waste and rewards users based on the waste disposed of through an Android app',
 	url: 'https://lush-ketchup-013.notion.site/Money-Bin-c34b0441b66e4a409a90c864e143a524?pvs=4',
 	techStack: [
 		{
@@ -41,6 +46,14 @@ var moneyBin: ProjectItemModel = {
 		{
 			name: 'Firebase',
 			icon: 'src/lib/assets/tech_stack_icon/firebase.svg'
+		},
+		{
+			name: 'Raspberry pi',
+			icon: 'src/lib/assets/tech_stack_icon/raspberrypi.svg'
+		},
+		{
+			name: 'Python',
+			icon: 'src/lib/assets/tech_stack_icon/python.svg'
 		}
 	]
 };
@@ -51,12 +64,16 @@ var lester: ProjectItemModel = {
 	url: 'https://www.linkedin.com/posts/manu-kenchappa-junjanna-910455143_ethlondon-hackathon-blockchaininnovation-activity-7124883918457110528-9PUS?utm_source=share&utm_medium=member_desktop',
 	techStack: [
 		{
-			name: 'Flutter',
-			icon: 'src/lib/assets/tech_stack_icon/flutter.svg'
+			name: 'React',
+			icon: 'src/lib/assets/tech_stack_icon/react.svg'
 		},
 		{
-			name: 'Firebase',
-			icon: 'src/lib/assets/tech_stack_icon/firebase.svg'
+			name: 'Ethereum',
+			icon: 'src/lib/assets/tech_stack_icon/ethereum.svg'
+		},
+		{
+			name: 'Solidity',
+			icon: 'src/lib/assets/tech_stack_icon/solidity.svg'
 		}
 	]
 };
@@ -73,6 +90,10 @@ var trickTacToe: ProjectItemModel = {
 		{
 			name: 'Firebase',
 			icon: 'src/lib/assets/tech_stack_icon/firebase.svg'
+		},
+		{
+			name: 'Lottie Files',
+			icon: 'src/lib/assets/tech_stack_icon/lottiefiles.svg'
 		}
 	]
 };
@@ -84,12 +105,20 @@ var agroChain: ProjectItemModel = {
 	url: 'https://lush-ketchup-013.notion.site/Agro-Chain-a3a808bce5b240e082019a8484329a95?pvs=4',
 	techStack: [
 		{
-			name: 'Android',
-			icon: 'src/lib/assets/tech_stack_icon/android.svg'
+			name: 'React',
+			icon: 'src/lib/assets/tech_stack_icon/react.svg'
 		},
 		{
 			name: 'Firebase',
 			icon: 'src/lib/assets/tech_stack_icon/firebase.svg'
+		},
+		{
+			name: 'Circle Wallet',
+			icon: 'src/lib/assets/tech_stack_icon/circlewallet.png'
+		},
+		{
+			name: 'Polygon',
+			icon: 'src/lib/assets/tech_stack_icon/polygon.svg'
 		}
 	]
 };
@@ -227,17 +256,15 @@ var movieDatabase: ProjectItemModel = {
 };
 
 export const projectData: ProjectItemModel[] = [
+	// BNM college Projects
 	moneyBin,
-	trickTacToe,
-	agroChain,
-	lester,
 	boringHtml,
-	realEstateTodo,
+	trickTacToe,
+	// University Projects
 	three_d_Project,
 	llm,
-	faceParty,
-	iceGame,
-	tickTacToe,
-	leadApp,
-	movieDatabase
+	realEstateTodo,
+	// Hackathons
+	lester,
+	agroChain
 ];
