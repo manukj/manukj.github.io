@@ -70,10 +70,6 @@ var lester: ProjectItemModel = {
 		{
 			name: 'Ethereum',
 			icon: 'src/lib/assets/tech_stack_icon/ethereum.svg'
-		},
-		{
-			name: 'Solidity',
-			icon: 'src/lib/assets/tech_stack_icon/solidity.svg'
 		}
 	]
 };

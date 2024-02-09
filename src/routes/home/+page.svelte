@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { mainPageHeader, mainPageSubHeader } from '$lib/data/data';
+	import { links, mainPageHeader, mainPageSubHeader } from '$lib/data/main_page_data';
 	import { firstTime } from '$lib/stores/store';
 	import { onMount } from 'svelte';
 
@@ -25,6 +25,14 @@
 		</div>
 		<div class="text-white font-thin pt-5 {$firstTime ? 'fade-in' : ''}">
 			{mainPageSubHeader}
+		</div>
+
+		<div class="flex flex-row w-full place-content-center pt-10">
+			{#each links as link}
+				<a href={link.url} target="_blank" rel="noopener noreferrer bg-red">
+					<img src={link.icon} alt={link.name} class="w-7 mr-10 h-10" />
+				</a>
+			{/each}
 		</div>
 		<div class="w-full place-content-center flex pt-10">
 			<iframe
