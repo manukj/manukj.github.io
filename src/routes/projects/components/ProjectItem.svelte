@@ -11,13 +11,13 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 
-<div
-	class="w-96 rounded shadow-slate-600 shadow-lg border-gray-500 border-[1px] cursor-pointer"
-	on:click={() => {
-		moveToUrl(project?.url ?? '');
-	}}
->
-	<Card>
+<Card>
+	<div
+		class="w-96 rounded shadow-slate-600 shadow-lg border-gray-500 border-[1px] cursor-pointer"
+		on:click={() => {
+			moveToUrl(project?.url ?? '');
+		}}
+	>
 		<div class="card-body">
 			<h2 class="text-lg text-white">{project.name}</h2>
 			<div class="flex flex-row overflow-x-auto">
@@ -27,5 +27,5 @@
 			</div>
 			<div class="line-clamp-4 text-xs">{project.description}</div>
 		</div>
-	</Card>
-</div>
+	</div>
+</Card>
